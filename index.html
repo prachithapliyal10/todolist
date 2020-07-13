@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TODO List</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+        <link rel="stylesheet" href="./style.css">
+        <link href="./fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
+
+        </head>
+    <body>
+        <header tabindex="0">Prachi's Todo List</header>
+        <div class="header">
+            <form>
+                <input tabindex="0" aria-label="Enter the todo" type="text" class="todoInput">
+                <button tabindex="0" aria-label="Click on the submit button to save the todo" class="todoButton" type="submit">
+                    <i class="fas fa-plus-square"></i>
+                </button>
+                <div class="select">
+                    <select name="todos" class="filterTodo">
+                        <option value="All">All</option>
+                        <option value="Completed">Completed</option>
+                        <option value="InComplete">InComplete</option>
+                </select>
+                </div>
+            </form>
+        </div>
+        
+       <div class="todoRender">
+           <ul class="todoList"></ul>
+       </div>
+        <script src="./jscript.js"></script>
+    </body>
+</html>
